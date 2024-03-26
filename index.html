@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <style>
+    #result {
+      background-color: transparent;
+      border: none;
+      border-radius: 1px solid purple;
+      padding: 10px;
+      font-size: 20px;
+    }
+    input[type="button"]{
+      border: none;
+      width: 100%;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      background-color: rgb(39, 31,)
+    }
+    section {
+      border: 3px solid purple;
+      width: max-content;
+      border-radius: 20px;
+      padding: 100px 10px 10px 10px;
+      height: 270px;
+    }
+     
+   
+    
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td colspan="3"><input type="text" id="result" disabled /> 
+      <td>
+       <input type="button" value="C"  onclick="clearNum()" /> 
+      </td>
+
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="display('1')" /></td>
+      <td><input type="button" value="2"  onclick="display('2')"/></td>
+      <td><input type="button" value="3"  onclick="display('3')"/></td>
+      <td><input type="button" value="/"  onclick="display('/')"/></td>
+     </tr>
+     <tr>
+      <td><input type="button" value="4"  onclick="display('4')"/></td>
+      <td><input type="button" value="5"  onclick="display('5')"/></td>
+      <td><input type="button" value="6"  onclick="display('6')"/></td>
+      <td><input type="button" value="-"  onclick="display('-')"/></td>
+     </tr>
+     <tr>
+      <td><input type="button" value="7"  onclick="display('7')"/></td>
+      <td><input type="button" value="8"  onclick="display('8')"/></td>
+      <td><input type="button" value="8"  onclick="display('9')"/></td>
+      <td><input type="button" value="+"  onclick="display('+')"/></td>
+     </tr>
+     <tr>
+      <td><input type="button" value="0"  onclick="display('0')"/></td>
+      <td><input type="button" value="="  onclick="run('=')"/></td>
+      <td><input type="button" value="."  onclick="display('.')"/></td>
+      <td><input type="button" value="+"  onclick="display('+')"/></td>
+     </tr>
+
+  </table>
+  <script src="./index.js"></script>
+
+
+    
+
+</body>
+
+</HTML>
